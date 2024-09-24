@@ -48,7 +48,7 @@ public class ProductController {
 	}
 	
 	// read product by Id
-	//@GetMapping("/products/:productId") 
+	//@GetMapping("/products/:productId") -- use in JavaScript 
 	@GetMapping("/products/{productId}")
 	public ProductEntity getProductById(@PathVariable("productId") Integer productId) {
 		Optional<ProductEntity> product = productRepository.findById(productId);
